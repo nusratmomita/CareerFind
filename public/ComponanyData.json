@@ -1,0 +1,279 @@
+[
+    {
+      "id": "1",
+      "name": "TechWave Solutions",
+      "logo": "https://example.com/logos/techwave.png",
+      "location": "San Francisco, CA",
+      "website": "https://techwave.com",
+      "industry": "Software Development",
+      "jobs": [
+        {
+          "id": "job-001",
+          "title": "Frontend Developer",
+          "bannerImage": "https://example.com/banners/frontend.jpg",
+          "location": "Remote",
+          "salary": "$70,000 - $90,000",
+          "jobType": "Full-time",
+          "description": "Join our team to develop dynamic web interfaces.",
+          "requirements": [
+            "Proficient in HTML, CSS, and JavaScript",
+            "Experience with React or Vue.js",
+            "Familiarity with RESTful APIs",
+            "Good understanding of responsive design",
+            "Excellent problem-solving skills"
+          ]
+        },
+        {
+          "id": "job-002",
+          "title": "Backend Developer",
+          "bannerImage": "https://example.com/banners/backend.jpg",
+          "location": "San Francisco, CA",
+          "salary": "$80,000 - $110,000",
+          "jobType": "Full-time",
+          "description": "Build robust server-side applications and APIs.",
+          "requirements": [
+            "Strong knowledge of Node.js or Django",
+            "Experience with MongoDB and PostgreSQL",
+            "Understanding of REST and GraphQL",
+            "Familiar with cloud services like AWS or GCP",
+            "Team player with strong communication skills"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "GreenTech Innovators",
+      "logo": "https://example.com/logos/greentech.png",
+      "location": "Austin, TX",
+      "website": "https://greentech.com",
+      "industry": "Renewable Energy",
+      "jobs": [
+        {
+          "id": "job-003",
+          "title": "Data Scientist",
+          "bannerImage": "https://example.com/banners/data-science.jpg",
+          "location": "Austin, TX",
+          "salary": "$95,000 - $120,000",
+          "jobType": "Full-time",
+          "description": "Analyze data to optimize clean energy systems.",
+          "requirements": [
+            "Expertise in Python, R, and SQL",
+            "Knowledge of machine learning algorithms",
+            "Experience with data visualization tools",
+            "Background in environmental science is a plus",
+            "Strong analytical skills"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "FinVerse Corp",
+      "logo": "https://example.com/logos/finverse.png",
+      "location": "New York, NY",
+      "website": "https://finverse.com",
+      "industry": "Fintech",
+      "jobs": [
+        {
+          "id": "job-004",
+          "title": "UI/UX Designer",
+          "bannerImage": "https://example.com/banners/uiux.jpg",
+          "location": "Remote",
+          "salary": "$65,000 - $85,000",
+          "jobType": "Full-time",
+          "description": "Design user-centric financial interfaces.",
+          "requirements": [
+            "Proficient in Figma, Sketch, or Adobe XD",
+            "Strong understanding of user experience principles",
+            "Experience with responsive design",
+            "Portfolio demonstrating UI/UX projects",
+            "Collaboration with cross-functional teams"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "HealthSync",
+      "logo": "https://example.com/logos/healthsync.png",
+      "location": "Chicago, IL",
+      "website": "https://healthsync.com",
+      "industry": "Healthcare Technology",
+      "jobs": [
+        {
+          "id": "job-005",
+          "title": "Mobile App Developer",
+          "bannerImage": "https://example.com/banners/mobile.jpg",
+          "location": "Chicago, IL",
+          "salary": "$85,000 - $100,000",
+          "jobType": "Full-time",
+          "description": "Develop mobile apps for healthcare monitoring.",
+          "requirements": [
+            "Experience with Flutter or React Native",
+            "Understanding of HIPAA compliance",
+            "Strong knowledge of mobile app lifecycle",
+            "Ability to publish apps to stores",
+            "Debugging and performance optimization"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "name": "EduNet Global",
+      "logo": "https://example.com/logos/edunet.png",
+      "location": "Boston, MA",
+      "website": "https://edunet.com",
+      "industry": "E-Learning",
+      "jobs": [
+        {
+          "id": "job-006",
+          "title": "Content Writer",
+          "bannerImage": "https://example.com/banners/writer.jpg",
+          "location": "Remote",
+          "salary": "$40,000 - $55,000",
+          "jobType": "Part-time",
+          "description": "Write educational content for online courses.",
+          "requirements": [
+            "Excellent writing and grammar skills",
+            "Familiarity with LMS platforms",
+            "Subject matter expertise in any academic field",
+            "SEO understanding is a plus",
+            "Creative storytelling ability"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "name": "CyberWall Ltd.",
+      "logo": "https://example.com/logos/cyberwall.png",
+      "location": "Seattle, WA",
+      "website": "https://cyberwall.com",
+      "industry": "Cybersecurity",
+      "jobs": [
+        {
+          "id": "job-007",
+          "title": "Security Analyst",
+          "bannerImage": "https://example.com/banners/security.jpg",
+          "location": "Seattle, WA",
+          "salary": "$90,000 - $115,000",
+          "jobType": "Full-time",
+          "description": "Monitor and respond to cybersecurity incidents.",
+          "requirements": [
+            "Knowledge of SIEM tools",
+            "Experience with intrusion detection",
+            "Familiarity with risk assessment frameworks",
+            "Security certifications preferred (CISSP, CEH)",
+            "Attention to detail"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "name": "RetailVerse",
+      "logo": "https://example.com/logos/retailverse.png",
+      "location": "Los Angeles, CA",
+      "website": "https://retailverse.com",
+      "industry": "E-commerce",
+      "jobs": [
+        {
+          "id": "job-008",
+          "title": "DevOps Engineer",
+          "bannerImage": "https://example.com/banners/devops.jpg",
+          "location": "Remote",
+          "salary": "$95,000 - $125,000",
+          "jobType": "Full-time",
+          "description": "Automate infrastructure and CI/CD pipelines.",
+          "requirements": [
+            "Proficient in Docker, Kubernetes, Jenkins",
+            "Experience with cloud platforms (AWS, Azure)",
+            "Strong scripting skills (Bash, Python)",
+            "Knowledge of monitoring tools",
+            "Problem-solving mindset"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "name": "AgriTech Farm",
+      "logo": "https://example.com/logos/agritech.png",
+      "location": "Des Moines, IA",
+      "website": "https://agritech.com",
+      "industry": "Agriculture Technology",
+      "jobs": [
+        {
+          "id": "job-009",
+          "title": "IoT Engineer",
+          "bannerImage": "https://example.com/banners/iot.jpg",
+          "location": "Des Moines, IA",
+          "salary": "$80,000 - $100,000",
+          "jobType": "Full-time",
+          "description": "Design IoT devices for precision farming.",
+          "requirements": [
+            "Knowledge of embedded systems",
+            "Experience with microcontrollers and sensors",
+            "Understanding of wireless protocols",
+            "Programming in C/C++ and Python",
+            "Field-testing capabilities"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "name": "GameForge Studios",
+      "logo": "https://example.com/logos/gameforge.png",
+      "location": "San Diego, CA",
+      "website": "https://gameforge.com",
+      "industry": "Game Development",
+      "jobs": [
+        {
+          "id": "job-010",
+          "title": "Game Developer",
+          "bannerImage": "https://example.com/banners/game-dev.jpg",
+          "location": "On-site",
+          "salary": "$75,000 - $95,000",
+          "jobType": "Full-time",
+          "description": "Develop immersive game mechanics and environments.",
+          "requirements": [
+            "Proficient in Unity or Unreal Engine",
+            "Strong C# or C++ skills",
+            "Experience with game physics and AI",
+            "Creative and innovative thinking",
+            "Portfolio of game projects"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "name": "CloudNova",
+      "logo": "https://example.com/logos/cloudnova.png",
+      "location": "Denver, CO",
+      "website": "https://cloudnova.com",
+      "industry": "Cloud Computing",
+      "jobs": [
+        {
+          "id": "job-011",
+          "title": "Cloud Architect",
+          "bannerImage": "https://example.com/banners/cloud.jpg",
+          "location": "Remote",
+          "salary": "$120,000 - $150,000",
+          "jobType": "Full-time",
+          "description": "Design and manage scalable cloud systems.",
+          "requirements": [
+            "Hands-on experience with AWS, Azure, or GCP",
+            "Knowledge of cloud security best practices",
+            "Infrastructure as Code (Terraform, CloudFormation)",
+            "Strong architecture and design skills",
+            "Excellent leadership and communication"
+          ]
+        }
+      ]
+    }
+  ]
+  
