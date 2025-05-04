@@ -1,0 +1,5 @@
+.navbarLinks  a.active{
+  background-color: rgb(55, 55, 237);
+  font-weight: 900;
+  color: wheat
+}

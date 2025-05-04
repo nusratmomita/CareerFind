@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "../../assets/logo.png";
 import { NavLink } from "react-router";
-
+import "./Navbar.css"
 
 const Navbar = () => {
 
@@ -10,8 +10,8 @@ const Navbar = () => {
         <li className="text-gray-100 text-xl font-bold"><NavLink to="/success">Success</NavLink></li>
         <li className="text-gray-100 text-xl font-bold"><NavLink to="/about">About</NavLink></li>
         <li className="text-gray-100 text-xl font-bold"><NavLink to="/contactUs">Contact Us</NavLink></li>
-        <li className="ml-2 text-blue-900 text-xl font-semibold border border-blue-300 rounded-xl bg-blue-300"><NavLink to="/login">Login</NavLink></li>
-        <li className="ml-3 text-purple-900 text-xl font-semibold border border-purple-300 rounded-xl bg-purple-300"><NavLink to="/register">Registration</NavLink></li>
+        <li className="ml-2 text-blue-900 text-xl font-semibold  rounded-xl bg-blue-300"><NavLink to="/login">Login</NavLink></li>
+        <li className="ml-3 text-purple-900 text-xl font-semibold  rounded-xl bg-purple-300"><NavLink to="/register">Registration</NavLink></li>
     </>
   
     return (
@@ -30,7 +30,7 @@ const Navbar = () => {
         </div>
       </div>
       <div className="flex-none">
-        <ul className="menu menu-horizontal px-1">
+        <ul className="navbarLinks menu menu-horizontal px-1">
           {
             links
           }
