@@ -7,6 +7,8 @@ import ContactUs from "../Pages/ContactUs/ContactUs";
 import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
+import Recruiters from "../Pages/RecentJobs/RecentJobs";
+import RecentJobs from "../Pages/RecentJobs/RecentJobs";
 
 export const router = createBrowserRouter([
     {
@@ -39,9 +41,17 @@ export const router = createBrowserRouter([
             Component: Register
            },
            {
+            path: "/recruiter",
+            Component: Recruiters,
+           },
+           {
+            path: "/recentlyAddedJobs",
+            Component: RecentJobs,
+           },
+           {
             path: "*",
             Component: ErrorPage
-           }
+           },
         ]
     }
 ])
