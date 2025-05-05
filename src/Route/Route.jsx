@@ -9,6 +9,7 @@ import Register from "../Pages/Register/Register";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import Recruiters from "../Pages/RecentJobs/RecentJobs";
 import RecentJobs from "../Pages/RecentJobs/RecentJobs";
+import CompanyDetail from "../Pages/CompanyDetail/CompanyDetail";
 
 export const router = createBrowserRouter([
     {
@@ -19,6 +20,7 @@ export const router = createBrowserRouter([
             index: true,
             path: "/",
             Component: Home,
+            loader: () => fetch("/CompanyData.json")
            },
            {
             path: "/about",
@@ -47,6 +49,11 @@ export const router = createBrowserRouter([
            {
             path: "/recentlyAddedJobs",
             Component: RecentJobs,
+           },
+           {
+            path: "/companyDetail/:id",
+            Component: CompanyDetail,
+            loader: () => fetch("/CompanyData.json")
            },
            {
             path: "*",

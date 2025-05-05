@@ -2,7 +2,7 @@
     {
       "id": "1",
       "name": "TechWave Solutions",
-      "logo": "https://example.com/logos/techwave.png",
+      "logo": "https://i.ibb.co.com/1Gc3Kgpf/techwave-solutionspvt-logo.jpg",
       "location": "San Francisco, CA",
       "website": "https://techwave.com",
       "industry": "Software Development",
@@ -44,7 +44,7 @@
     {
       "id": "2",
       "name": "GreenTech Innovators",
-      "logo": "https://example.com/logos/greentech.png",
+      "logo": "https://i.ibb.co.com/bM0Wt5k4/download.png",
       "location": "Austin, TX",
       "website": "https://greentech.com",
       "industry": "Renewable Energy",
@@ -70,7 +70,7 @@
     {
       "id": "3",
       "name": "FinVerse Corp",
-      "logo": "https://example.com/logos/finverse.png",
+      "logo": "https://i.ibb.co.com/20nW6Ngy/finverse-logo.jpg",
       "location": "New York, NY",
       "website": "https://finverse.com",
       "industry": "Fintech",
@@ -96,7 +96,7 @@
     {
       "id": "4",
       "name": "HealthSync",
-      "logo": "https://example.com/logos/healthsync.png",
+      "logo": "https://i.ibb.co.com/h17Q7Wwv/images.png",
       "location": "Chicago, IL",
       "website": "https://healthsync.com",
       "industry": "Healthcare Technology",
@@ -122,7 +122,7 @@
     {
       "id": "5",
       "name": "EduNet Global",
-      "logo": "https://example.com/logos/edunet.png",
+      "logo": "https://i.ibb.co.com/1GNZ48gs/images.jpg",
       "location": "Boston, MA",
       "website": "https://edunet.com",
       "industry": "E-Learning",
@@ -148,7 +148,7 @@
     {
       "id": "6",
       "name": "CyberWall Ltd.",
-      "logo": "https://example.com/logos/cyberwall.png",
+      "logo": "https://i.ibb.co.com/GzTsbmm/1735649055022.jpg",
       "location": "Seattle, WA",
       "website": "https://cyberwall.com",
       "industry": "Cybersecurity",
@@ -174,7 +174,7 @@
     {
       "id": "7",
       "name": "RetailVerse",
-      "logo": "https://example.com/logos/retailverse.png",
+      "logo": "https://i.ibb.co.com/7xd2DspM/download.jpg",
       "location": "Los Angeles, CA",
       "website": "https://retailverse.com",
       "industry": "E-commerce",
@@ -199,34 +199,33 @@
     },
     {
       "id": "8",
-      "name": "AgriTech Farm",
-      "logo": "https://example.com/logos/agritech.png",
-      "location": "Des Moines, IA",
+      "name": "SG Innovations",
+      "logo": "https://i.ibb.co.com/cchCrXJ9/SGInnovate-Logo.jpg",
+      "location": "Sylhet, Bangladesh",
       "website": "https://agritech.com",
-      "industry": "Agriculture Technology",
+      "industry": "Software Company",
       "jobs": [
         {
           "id": "job-009",
-          "title": "IoT Engineer",
+          "title": "MERN Developer",
           "bannerImage": "https://example.com/banners/iot.jpg",
-          "location": "Des Moines, IA",
+          "location": "Sylhet, BangladeshA",
           "salary": "$80,000 - $100,000",
           "jobType": "Full-time",
           "description": "Design IoT devices for precision farming.",
           "requirements": [
-            "Knowledge of embedded systems",
-            "Experience with microcontrollers and sensors",
-            "Understanding of wireless protocols",
-            "Programming in C/C++ and Python",
-            "Field-testing capabilities"
+            "Knowledge of HTML , CSS and JavaScript",
+            "Experience with MongoDB, Express.js, React.js, Node.js",
+            "Understanding of Design Patterns",
+            "Problem solving skill in JS/C++/Python/Java"
           ]
         }
       ]
     },
     {
       "id": "9",
-      "name": "GameForge Studios",
-      "logo": "https://example.com/logos/gameforge.png",
+      "name": "Google",
+      "logo": "https://i.ibb.co.com/KjFkCLBn/channels4-profile.jpg",
       "location": "San Diego, CA",
       "website": "https://gameforge.com",
       "industry": "Game Development",
@@ -251,8 +250,8 @@
     },
     {
       "id": "10",
-      "name": "CloudNova",
-      "logo": "https://example.com/logos/cloudnova.png",
+      "name": "AuthLab",
+      "logo": "https://i.ibb.co.com/BHZ453dn/images.png",
       "location": "Denver, CO",
       "website": "https://cloudnova.com",
       "industry": "Cloud Computing",
