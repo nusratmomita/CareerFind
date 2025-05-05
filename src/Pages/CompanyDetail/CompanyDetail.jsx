@@ -8,6 +8,8 @@ const CompanyDetail = () => {
 
     const selectedCompany = jsonData.find((company) => company.id === id);
     console.log(selectedCompany)
+
+    
     return (
         <div>
             

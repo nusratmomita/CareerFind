@@ -7,7 +7,7 @@ const HowItWorks = () => {
     return (
         <div>
             <div className='flex gap-2 justify-center items-center'>
-                <h1 className='text-[#333333] text-3xl font-bold text-center'>[ How This Website Works? ]</h1>
+                <h1 className='text-[#333333] text-4xl font-bold text-center'>[ How This Website Works? ]</h1>
                 <img className="w-12 h-10" src={workingImage} alt='workingImage'></img>
             </div>
 
