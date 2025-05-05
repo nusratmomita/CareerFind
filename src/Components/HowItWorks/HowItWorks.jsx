@@ -56,7 +56,7 @@ const HowItWorks = () => {
                         <h1>Search for jobs____</h1>
                         <p className='text-blue-800 mt-5 text-2xl font-medium'>Find Your dream jobs</p>
                         <p className='text-blue-800 mt-2 text-2xl font-medium'>Look for millions of jobs with our seamless searching tab.                     
-                        <NavLink to="/recentJobs"> [ Job section ]</NavLink>
+                        <NavLink to="/recentlyAddedJobs"> [ Job section ]</NavLink>
                         </p>
                     </div>
             </div>

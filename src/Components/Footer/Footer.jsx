@@ -3,7 +3,7 @@ import logo from "../../assets/logo.png";
 
 const Footer = () => {
   return (
-    <footer className="mt-100 footer sm:footer-horizontal bg-[#7194bc] text-base-content p-5">
+    <footer className="mt-50 footer sm:footer-horizontal bg-[#7194bc] text-base-content p-5">
       <aside>
         <img className="w-25 h-20 bg-white rounded-2xl" src={logo} alt="logo" />
         <h1 className="mt-2">
