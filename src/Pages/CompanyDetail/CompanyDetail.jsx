@@ -52,7 +52,7 @@ const CompanyDetail = () => {
       </h1>
       {/* jobs list */}
       <div className="mt-20 space-y-3 bg-fuchsia-200 mx-auto max-w-lg p-5 rounded-2xl">
-        {selectedCompany.jobs.map((job) => <JobDetails key={job.id} job={job}></JobDetails>)}
+        {selectedCompany.jobs.map((job) => <JobDetails key={job.id} job={job} website={selectedCompany.website} ></JobDetails>)}
       </div>
     </div>
   );
