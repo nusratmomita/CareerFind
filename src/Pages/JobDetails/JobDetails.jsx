@@ -1,9 +1,13 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
+
 
 const JobDetails = ({job , website}) => {
-
     return (
         <>
+        <Helmet>
+          <title>Job Details</title>
+        </Helmet>
             <h1 className="text-[#333333] text-xl font-bold text-center">
               Title :<span> {job.title}</span>
             </h1>

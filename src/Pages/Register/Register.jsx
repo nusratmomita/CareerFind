@@ -2,11 +2,13 @@ import React, { useContext } from "react";
 import {  Navigate, NavLink, useLocation, useNavigate } from "react-router";
 import { authContext } from "../../Root/Root";
 import { ToastContainer, toast } from "react-toastify";
+import { Helmet } from "react-helmet-async";
 
 const Register = () => {
   const { handleRegisterForm, handleGoogleSignIn } = useContext(authContext);
   const navigate = useNavigate();
   const location = useLocation();
+  const currentPath  = location.pathname
 
   const handleRegisterSubmit = (e) => {
     e.preventDefault();
@@ -63,6 +65,9 @@ const Register = () => {
 
   return (
     <>
+    <Helmet>
+      <title>{currentPath}</title>
+    </Helmet>
       <ToastContainer></ToastContainer>
       <div className="w-full max-w-md p-4 rounded-md shadow sm:p-8 bg-gray-800 text-white mx-auto my-10">
         <h1 className="mt-7 mb-10 font-bold text-3xl text-center">

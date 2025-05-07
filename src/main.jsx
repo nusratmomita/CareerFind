@@ -4,7 +4,11 @@ import './index.css'
 import App from './App.jsx'
 import { RouterProvider } from 'react-router'
 import { router } from './Route/Route.jsx'
+import {  HelmetProvider } from 'react-helmet-async';
 
 createRoot(document.getElementById('root')).render(
-  <RouterProvider router={router}></RouterProvider>
+  
+  <HelmetProvider>
+    <RouterProvider router={router}></RouterProvider>
+  </HelmetProvider>
 )

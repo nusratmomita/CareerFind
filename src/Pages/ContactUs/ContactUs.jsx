@@ -1,12 +1,17 @@
 import React from 'react';
-import connectUs from "../../assets/connectUs.jfif"
+import connectUs from "../../assets/connectUs.png"
+// eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion"
+import { Helmet } from 'react-helmet-async';
 
 const ContactUs = () => {
     const headline = "Need Help Or Stuck?";
     const words = headline.split("");
     return (
         <div className='flex  justify-evenly items-center'>
+            <Helmet>
+                <title>Contact Us</title>
+            </Helmet>
             <img src={connectUs} alt="connectUs" />
             <div className='border-2 border-red-800 p-10 rounded-2xl text-center space-y-5'>
                 {

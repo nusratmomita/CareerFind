@@ -1,17 +1,20 @@
 import React from "react";
-import { useLoaderData, useParams } from "react-router";
+import { useLoaderData, useLocation, useParams } from "react-router";
 import JobDetails from "../JobDetails/JobDetails";
+import { Helmet } from "react-helmet-async";
 
 const CompanyDetail = () => {
   const { id } = useParams();
   // console.log(id)
   const jsonData = useLoaderData();
+  
 
   const selectedCompany = jsonData.find((company) => company.id === id);
   // console.log(selectedCompany)
 
   return (
     <div>
+      
       {/* everything but not list of jobs */}
       <div className="flex justify-center items-center gap-20 border-2 border-gray-950 rounded-2xl p-10 m-20">
         <div className="flex gap-5 items-center justify-center">

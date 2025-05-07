@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { Navigate, NavLink, useNavigate } from "react-router";
 import { ToastContainer, toast } from "react-toastify";
 import { authContext } from "../../Root/Root";
+import { Helmet } from "react-helmet-async";
 
 
 const Login = () => {
@@ -48,6 +49,9 @@ const Login = () => {
 
   return (
     <>
+    <Helmet>
+      <title>Login</title>
+    </Helmet>
       <ToastContainer></ToastContainer>
       <div className="w-full max-w-md p-4 rounded-md shadow sm:p-8 bg-gray-800 text-white mx-auto my-10">
         <div className="mb-8 text-center">

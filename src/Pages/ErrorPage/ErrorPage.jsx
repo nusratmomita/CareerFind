@@ -1,9 +1,13 @@
 import React from 'react';
 import errorImage from "../../assets/Error.png"
 import { NavLink } from 'react-router';
+import { Helmet } from 'react-helmet-async';
 const ErrorPage = () => {
     return (
         <div className='flex gap-20 justify-center items-center'>
+            <Helmet>
+                <title>Error Page</title>
+            </Helmet>
             <img src={errorImage} alt="errorImage"/>
             <div className='text-center  space-y-6'>
                 <h1 className='text-5xl font-bold'>Sorry!😌 Wrong Page</h1>
