@@ -1,12 +1,28 @@
-# React + Vite
+<h1>Welcome to CareerFind</h1>
+<p>We'll help you get a job and connect with worthy recruiters. With Us the journey of finding job is easier!</p>
+<p>The purpose of this site is to connect you with recruiters, prepare you for a job interview, and provide essential guidance to get your dream JOB____</p>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<br/>
 
-Currently, two official plugins are available:
+<h1>Key features of CareerFind are:</h1>
+<ul>
+  <li>Login/Register system so that your information is secured perfectly.</li>
+  <li>Companies section to review which company is currently hiring for jobs with the apply link.</li>
+  <li>Update Profile.</li>
+  <li>Login/Register with Google to save some time.</li>
+  <li>See which jobs are currently worth applying for you.</li>
+</ul>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<br/>
+<h1>Used Packages:</h1>
+<ul>
+  <li>React helmet for title showcase</li>
+  <li>React toastify for notifying</li>
+  <li>TailwindCSS and DaisyUI for styling purpose</li>
+  <li>React CountUp and Motion for animation</li>
+  <li>Firebase for authentication</li>
+</ul>
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+<br/>
+<br/>
+<a href="https://careerfind-568f3.web.app/">Live Demo</a>
