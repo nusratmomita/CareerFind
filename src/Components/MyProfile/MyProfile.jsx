@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { authContext } from '../../Root/Root';
 import { useNavigate } from 'react-router';
+import { Helmet } from 'react-helmet-async';
 
 const MyProfile = () => {
     const {user} = useContext(authContext)
@@ -9,6 +10,9 @@ const MyProfile = () => {
     const navigate = useNavigate();
     return (
         <div>
+            <Helmet>
+                <title>My Profile</title>
+            </Helmet>
             <div className="card max-md: mx-auto mt-20 w-96 bg-base-100 card-lg shadow-sm">
                 <div className="card-body">
                     <div className='flex gap-10'>

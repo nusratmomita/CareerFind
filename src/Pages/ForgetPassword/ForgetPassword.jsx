@@ -1,4 +1,5 @@
 import React,{useState,useEffect} from "react";
+import { Helmet } from "react-helmet-async";
 import { useLocation } from "react-router";
 import { toast, ToastContainer } from "react-toastify";
 // import { authContext } from "../../Root/Root";
@@ -26,6 +27,9 @@ const ForgetPassword = () => {
 
   return (
     <>
+    <Helmet>
+        <title>Forget Password</title>
+    </Helmet>
         <ToastContainer></ToastContainer>
         <div className="w-full max-w-md p-4 rounded-md shadow sm:p-8 bg-gray-800 text-white mx-auto my-10">
         <h2 className="text-2xl font-bold mb-4 text-center">Reset Password</h2>
