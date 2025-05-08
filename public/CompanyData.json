@@ -10,7 +10,7 @@
         {
           "id": "job-001",
           "title": "Frontend Developer",
-          "bannerImage": "https://example.com/banners/frontend.jpg",
+          "bannerImage": "https://i.ibb.co.com/JFpdyN9x/istockphoto-1319606179-612x612.jpg",
           "location": "Remote",
           "salary": "$70,000 - $90,000",
           "jobType": "Full-time",
@@ -26,7 +26,7 @@
         {
           "id": "job-002",
           "title": "Backend Developer",
-          "bannerImage": "https://example.com/banners/backend.jpg",
+          "bannerImage": "https://i.ibb.co.com/C3ZjV5XY/gradient-hiring-poster-flyer-template-23-2150137321.jpg",
           "location": "San Francisco, CA",
           "salary": "$80,000 - $110,000",
           "jobType": "Full-time",
@@ -52,7 +52,7 @@
         {
           "id": "job-003",
           "title": "Data Scientist",
-          "bannerImage": "https://example.com/banners/data-science.jpg",
+          "bannerImage": "https://i.ibb.co.com/h1FyQRV7/360-F-281822599-0-DZJKf-Nln-QRFQq6d-CPZSyz-KXFg-NCt7-Jk.jpg",
           "location": "Austin, TX",
           "salary": "$95,000 - $120,000",
           "jobType": "Full-time",
@@ -63,6 +63,20 @@
             "Experience with data visualization tools",
             "Background in environmental science is a plus",
             "Strong analytical skills"
+          ]
+        },
+        {
+          "id": "job-004",
+          "title": "UI desiger",
+          "bannerImage": "https://i.ibb.co.com/h1FyQRV7/360-F-281822599-0-DZJKf-Nln-QRFQq6d-CPZSyz-KXFg-NCt7-Jk.jpg",
+          "location": "Austin, TX",
+          "salary": "$95,00 - $120,00",
+          "jobType": "Intern",
+          "description": "Design user friendly websites",
+          "requirements": [
+            "Expertise in Figma",
+            "Knowledge of HTML and CSS",
+            "Experience of 3+ years"
           ]
         }
       ]
@@ -76,9 +90,9 @@
       "industry": "Fintech",
       "jobs": [
         {
-          "id": "job-004",
+          "id": "job-005",
           "title": "UI/UX Designer",
-          "bannerImage": "https://example.com/banners/uiux.jpg",
+          "bannerImage": "https://i.ibb.co.com/C3ZjV5XY/gradient-hiring-poster-flyer-template-23-2150137321.jpg",
           "location": "Remote",
           "salary": "$65,000 - $85,000",
           "jobType": "Full-time",
@@ -102,9 +116,9 @@
       "industry": "Healthcare Technology",
       "jobs": [
         {
-          "id": "job-005",
+          "id": "job-006",
           "title": "Mobile App Developer",
-          "bannerImage": "https://example.com/banners/mobile.jpg",
+          "bannerImage": "https://i.ibb.co.com/C3ZjV5XY/gradient-hiring-poster-flyer-template-23-2150137321.jpg",
           "location": "Chicago, IL",
           "salary": "$85,000 - $100,000",
           "jobType": "Full-time",
@@ -115,6 +129,19 @@
             "Strong knowledge of mobile app lifecycle",
             "Ability to publish apps to stores",
             "Debugging and performance optimization"
+          ]
+        },{
+          "id": "job-007",
+          "title": "Dart App Developer",
+          "bannerImage": "https://i.ibb.co.com/C3ZjV5XY/gradient-hiring-poster-flyer-template-23-2150137321.jpg",
+          "location": "Chicago, IL",
+          "salary": "$50,000 - $100,000",
+          "jobType": "Part time",
+          "description": "Develop mobile apps for sports.",
+          "requirements": [
+            "Experience with Flutter or React Native",
+            "Understanding of HIPAA compliance",
+            "Freshers"
           ]
         }
       ]
@@ -128,9 +155,9 @@
       "industry": "E-Learning",
       "jobs": [
         {
-          "id": "job-006",
+          "id": "job-008",
           "title": "Content Writer",
-          "bannerImage": "https://example.com/banners/writer.jpg",
+          "bannerImage": "https://i.ibb.co.com/JFpdyN9x/istockphoto-1319606179-612x612.jpg",
           "location": "Remote",
           "salary": "$40,000 - $55,000",
           "jobType": "Part-time",
@@ -154,9 +181,9 @@
       "industry": "Cybersecurity",
       "jobs": [
         {
-          "id": "job-007",
+          "id": "job-009",
           "title": "Security Analyst",
-          "bannerImage": "https://example.com/banners/security.jpg",
+          "bannerImage": "https://i.ibb.co.com/JFpdyN9x/istockphoto-1319606179-612x612.jpg",
           "location": "Seattle, WA",
           "salary": "$90,000 - $115,000",
           "jobType": "Full-time",
@@ -180,9 +207,9 @@
       "industry": "E-commerce",
       "jobs": [
         {
-          "id": "job-008",
+          "id": "job-0010",
           "title": "DevOps Engineer",
-          "bannerImage": "https://example.com/banners/devops.jpg",
+          "bannerImage": "https://i.ibb.co.com/JFpdyN9x/istockphoto-1319606179-612x612.jpg",
           "location": "Remote",
           "salary": "$95,000 - $125,000",
           "jobType": "Full-time",
@@ -206,9 +233,9 @@
       "industry": "Software Company",
       "jobs": [
         {
-          "id": "job-009",
+          "id": "job-0011",
           "title": "MERN Developer",
-          "bannerImage": "https://example.com/banners/iot.jpg",
+          "bannerImage": "https://i.ibb.co.com/xtb6dhzG/we-hiring-now-banner-job-offer-background-vector-28490507.jpg",
           "location": "Sylhet, BangladeshA",
           "salary": "$80,000 - $100,000",
           "jobType": "Full-time",
@@ -231,9 +258,9 @@
       "industry": "Technology company",
       "jobs": [
         {
-          "id": "job-010",
+          "id": "job-012",
           "title": "Game Developer",
-          "bannerImage": "https://example.com/banners/game-dev.jpg",
+          "bannerImage": "https://i.ibb.co.com/tTrwLHcf/1907-m10-i007-n004-e08p-6433626a0966c60864e30cc925e0ada518dd7d1564f46946d50e91f685bd873f.jpg",
           "location": "On-site",
           "salary": "$75,000 - $95,000",
           "jobType": "Full-time",
@@ -257,9 +284,9 @@
       "industry": "Cloud Computing",
       "jobs": [
         {
-          "id": "job-011",
+          "id": "job-013",
           "title": "Cloud Architect",
-          "bannerImage": "https://example.com/banners/cloud.jpg",
+          "bannerImage": "https://i.ibb.co.com/xtb6dhzG/we-hiring-now-banner-job-offer-background-vector-28490507.jpg",
           "location": "Remote",
           "salary": "$120,000 - $150,000",
           "jobType": "Full-time",
@@ -268,6 +295,32 @@
             "Hands-on experience with AWS, Azure, or GCP",
             "Knowledge of cloud security best practices",
             "Infrastructure as Code (Terraform, CloudFormation)",
+            "Strong architecture and design skills",
+            "Excellent leadership and communication"
+          ]
+        }, {
+          "id": "job-014",
+          "title": "Assistant Teacher",
+          "bannerImage": "https://i.ibb.co.com/tTrwLHcf/1907-m10-i007-n004-e08p-6433626a0966c60864e30cc925e0ada518dd7d1564f46946d50e91f685bd873f.jpg",
+          "location": "Remote",
+          "salary": "$120,000 - $150,000",
+          "jobType": "Full-time",
+          "description": "Teach Our sister institute educationAcademy",
+          "requirements": [
+            "Hands-on experience with teaching",
+            "Masters degree",
+            "3+ years Experience of teaching"
+          ]
+        }, {
+          "id": "job-015",
+          "title": "Cloud Architect-2",
+          "bannerImage": "https://i.ibb.co.com/xtb6dhzG/we-hiring-now-banner-job-offer-background-vector-28490507.jpg",
+          "location": "Full time",
+          "salary": "$120,000 - $150,000",
+          "jobType": "Full-time",
+          "description": "Design and manage scalable cloud systems.",
+          "requirements": [
+            "Hands-on experience with AWS, Azure, or GCP",
             "Strong architecture and design skills",
             "Excellent leadership and communication"
           ]

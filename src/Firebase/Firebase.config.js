@@ -8,12 +8,12 @@ import { getAuth } from "firebase/auth";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyA_7y0vTMBL0usxbPJdVnWqW3H_0iccQrI",
-  authDomain: "careerfind-568f3.firebaseapp.com",
-  projectId: "careerfind-568f3",
-  storageBucket: "careerfind-568f3.firebasestorage.app",
-  messagingSenderId: "219521641260",
-  appId: "1:219521641260:web:61bfd70e0617227b9e5a89"
+  apiKey: import.meta.env.VITE_apiKey,
+  authDomain: import.meta.env.VITE_authDomain,
+  projectId: import.meta.env.VITE_projectId,
+  storageBucket: import.meta.env.VITE_storageBucket,
+  messagingSenderId:import.meta.env.VITE_messagingSenderId,
+  appId: import.meta.env.VITE_appId,
 };
 
 // Initialize Firebase

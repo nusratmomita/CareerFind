@@ -41,25 +41,15 @@ const Register = () => {
 
     // register with email and password
     handleRegisterForm(email, password ,photoURL)
-    .then((userCredential) => {
-      // Signed up 
-      const user = userCredential.user;
-      console.log(user)
-      navigate(location?.state ||  "/")
-      
-    })
-    .catch(() => {
-      
-      // ..
-    });
+    
   };
 
   // register with Google account
   const handleGoogle = () => {
     handleGoogleSignIn()
-      .then((userCredential) => {
-        const user = userCredential.user;
-        console.log(user)
+      .then(() => {
+        // const user = userCredential.user;
+        // console.log(user)
         navigate(location?.state ||  "/")
       })
       .catch(() => {

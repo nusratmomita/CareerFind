@@ -16,14 +16,18 @@ const Root = () => {
     const provider = new GoogleAuthProvider();
 
     // Register a new user 
-    const handleRegisterForm = (name, email , password , photoURL) => {
-        updateProfile(auth.currentUser, {
-            displayName:name , photoURL: photoURL
-          }).then(() => {
-          }).catch(() => {
+    const handleRegisterForm = (name, email, password, photoURL) => {
+        return createUserWithEmailAndPassword(auth, email, password)
+          .then((userCredential) => {
+            const user = userCredential.user;
+            return updateProfile(user, {
+              displayName: name,
+              photoURL: photoURL,
+            }).then(() => {
+            //   return userCredential;
+              setUser(user)
+            });
           });
-        return createUserWithEmailAndPassword(auth,email,password,photoURL)
-          
     }
 
     // Registration with Google account
@@ -45,9 +49,9 @@ const Root = () => {
     const handleLogOut = () => {
         signOut(auth).then(() => {
             // Sign-out successful.
-          }).catch((error) => {
+          }).catch(() => {
             // An error happened.
-            console.log(error)
+            // console.log(error)
           });
     }
 
