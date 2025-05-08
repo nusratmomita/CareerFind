@@ -3,9 +3,10 @@ import {  Navigate, NavLink, useLocation, useNavigate } from "react-router";
 import { authContext } from "../../Root/Root";
 import { ToastContainer, toast } from "react-toastify";
 import { Helmet } from "react-helmet-async";
+// import { updateProfile } from "firebase/auth";
 
 const Register = () => {
-  const { handleRegisterForm, handleGoogleSignIn } = useContext(authContext);
+  const { handleRegisterForm, handleGoogleSignIn  } = useContext(authContext);
   const navigate = useNavigate();
   const location = useLocation();
   const currentPath  = location.pathname
@@ -15,7 +16,7 @@ const Register = () => {
     const name = e.target.name.value;
     const email = e.target.email.value;
     const password = e.target.password.value;
-    // const photoURL = e.target.image_url.value;
+    const photoURL = e.target.image_url.value;
     // console.log(photoURL)
 
     if (!email || !password || !name) {
@@ -39,20 +40,26 @@ const Register = () => {
     }
 
     // register with email and password
-    handleRegisterForm(email, password)
-      .then(() => {
-        navigate(location?.state ||  "/")
-      })
-      .catch(() => {
-      });
+    handleRegisterForm(email, password ,photoURL)
+    .then((userCredential) => {
+      // Signed up 
+      const user = userCredential.user;
+      console.log(user)
+      navigate(location?.state ||  "/")
+      
+    })
+    .catch(() => {
+      
+      // ..
+    });
   };
 
   // register with Google account
   const handleGoogle = () => {
     handleGoogleSignIn()
-      .then(() => {
-        // const user = result.user;
-        // console.log(user);
+      .then((userCredential) => {
+        const user = userCredential.user;
+        console.log(user)
         navigate(location?.state ||  "/")
       })
       .catch(() => {

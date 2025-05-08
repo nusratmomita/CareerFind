@@ -10,7 +10,7 @@ const CompaniesSection = () => {
     return (
         <>
             <h1 className='text-[#333333] text-4xl font-bold text-center'>[ Company Partners ]</h1>
-            <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-10 m-20'>
+            <div className='m-20 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-10 '>
                 {
                     companyData.map((company) => <CompaniesList key={company.id} company={company}></CompaniesList>)
                 }

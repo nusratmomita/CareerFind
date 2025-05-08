@@ -8,7 +8,7 @@ const ContactUs = () => {
     const headline = "Need Help Or Stuck?";
     const words = headline.split("");
     return (
-        <div className='flex  justify-evenly items-center'>
+        <div className='m-20 lg:m-0 flex flex-col gap-15 lg:gap-0 lg:flex-row justify-evenly items-center'>
             <Helmet>
                 <title>Contact Us</title>
             </Helmet>

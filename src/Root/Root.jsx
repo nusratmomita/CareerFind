@@ -2,7 +2,7 @@ import React, { createContext, useEffect, useState } from 'react';
 import Navbar from '../Components/Navbar/Navbar';
 import { Outlet } from 'react-router';
 import Footer from '../Components/Footer/Footer';
-import { createUserWithEmailAndPassword , onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut } from "firebase/auth";
+import { createUserWithEmailAndPassword , onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth";
 import { auth } from "../Firebase/Firebase.config"
 import { GoogleAuthProvider } from "firebase/auth";
 import { FaSignOutAlt } from 'react-icons/fa';
@@ -16,8 +16,14 @@ const Root = () => {
     const provider = new GoogleAuthProvider();
 
     // Register a new user 
-    const handleRegisterForm = (email , password ) => {
-        return createUserWithEmailAndPassword(auth,email,password)
+    const handleRegisterForm = (name, email , password , photoURL) => {
+        updateProfile(auth.currentUser, {
+            displayName:name , photoURL: photoURL
+          }).then(() => {
+          }).catch(() => {
+          });
+        return createUserWithEmailAndPassword(auth,email,password,photoURL)
+          
     }
 
     // Registration with Google account
@@ -35,13 +41,12 @@ const Root = () => {
         return signInWithPopup(auth,provider)
     }
 
-
     // handle log out
     const handleLogOut = () => {
-        signOut(auth);
+        return signOut(auth);
     }
 
-    
+
     useEffect(()=> {
         const unsubscribe = onAuthStateChanged(auth , (currentUser)=>{
             setUser(currentUser);
@@ -50,7 +55,7 @@ const Root = () => {
         return () => {
             unsubscribe();
         }
-    })
+    },[])
 
 
     const handleForm = {

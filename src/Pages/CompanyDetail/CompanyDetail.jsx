@@ -1,7 +1,7 @@
 import React from "react";
-import { useLoaderData, useLocation, useParams } from "react-router";
+import { useLoaderData, useParams } from "react-router";
 import JobDetails from "../JobDetails/JobDetails";
-import { Helmet } from "react-helmet-async";
+
 
 const CompanyDetail = () => {
   const { id } = useParams();
@@ -16,8 +16,8 @@ const CompanyDetail = () => {
     <div>
       
       {/* everything but not list of jobs */}
-      <div className="flex justify-center items-center gap-20 border-2 border-gray-950 rounded-2xl p-10 m-20">
-        <div className="flex gap-5 items-center justify-center">
+      <div className="flex flex-col lg:flex-row justify-center items-center gap-20 border-2 border-gray-950 rounded-2xl p-10 m-20">
+        <div className="-mb-20 lg:-mb-0 flex gap-5 items-center justify-center">
           <img
             className="w-20 h-20 border-2 border-indigo-800 rounded-2xl"
             src={selectedCompany.logo}
@@ -28,8 +28,8 @@ const CompanyDetail = () => {
           </h1>
         </div>
         {/* line */}
-        <div className="h-[250px] min-h-[1em] w-[2px] self-stretch bg-black opacity-25 dark:via-black"></div>
-        <div>
+        <div className="h-[250px] min-h-[1em] w-[2px] rotate-90 lg:rotate-0 self-center-safe bg-black opacity-25 dark:via-black"></div>
+        <div className="-mt-20 lg:-mt-0">
           <h1 className="text-2xl font-extrabold">
             Location : {selectedCompany.location}
           </h1>

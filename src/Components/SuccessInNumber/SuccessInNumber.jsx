@@ -8,7 +8,7 @@ const SuccessInNumber = () => {
     return (
         <>
             <h1 className='mt-20 text-[#333333] text-4xl font-bold text-center'> [ Honour Section ]</h1>
-            <div className='text-3xl font-bold flex justify-center items-center gap-5 m-15'>
+            <div className='text-3xl font-bold flex flex-col lg:flex-row justify-center items-center gap-5 m-15'>
                 {/* Total jobs given */}
                 <div className='bg-purple-300 w-full p-5 flex flex-col gap-5 justify-center items-center'>
                     <h1 className='text-5xl'><CountUp start={0} end={100} delay={2}></CountUp>+</h1>
