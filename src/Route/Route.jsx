@@ -10,6 +10,8 @@ import CompanyDetail from "../Pages/CompanyDetail/CompanyDetail";
 import PrivateRoute from "../Pages/PrivateRoute/PrivateRoute";
 import MyProfile from "../Components/MyProfile/MyProfile";
 import Recruiters from "../Pages/Recruiters/Recruiters";
+import ForgetPassword from "../Pages/ForgetPassword/ForgetPassword";
+import UpdateProfile from "../Pages/UpdateProfile/UpdateProfile";
 
 export const router = createBrowserRouter([
     {
@@ -49,6 +51,14 @@ export const router = createBrowserRouter([
            {
             path: "/recentlyAddedJobs",
             Component: RecentJobs,
+           },
+           {
+            path: "/forgetPassword",
+            Component: ForgetPassword,
+           },
+           {
+            path: "/updateProfile",
+            Component: UpdateProfile,
            },
            {
             path: "/companyDetail/:id",

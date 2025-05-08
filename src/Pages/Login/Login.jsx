@@ -1,5 +1,5 @@
-import React, { useContext } from "react";
-import { Navigate, NavLink, useNavigate } from "react-router";
+import React, { useContext, useState } from "react";
+import { Navigate, NavLink, useLocation, useNavigate } from "react-router";
 import { ToastContainer, toast } from "react-toastify";
 import { authContext } from "../../Root/Root";
 import { Helmet } from "react-helmet-async";
@@ -7,9 +7,17 @@ import { Helmet } from "react-helmet-async";
 
 const Login = () => {
   
-  const { handleLoginForm , handleGoogleLogin} = useContext(authContext);
+  const { handleLoginForm , handleGoogleLogin } = useContext(authContext);
   
   const navigate = useNavigate();
+  const location = useLocation()
+  // console.log(location)
+  const [userEmail , setUserEmail] = useState("")
+
+  
+  // const forgetPasswordNavigation = () => {
+  //   navigate("/forgetPassword")
+  // }
 
   const handleLoginSubmit = (e) => {
     e.preventDefault();
@@ -23,7 +31,7 @@ const Login = () => {
     }
     handleLoginForm(email, password)
     .then(() => {
-        navigate(location?.state ||  "/")
+      navigate(`${location.state ? location.state : "/"}`);
         // ...
       })
       .catch(() => {
@@ -67,6 +75,7 @@ const Login = () => {
                 Email address
               </label>
               <input
+                onChange={(e) => setUserEmail(e.target.value)}
                 type="email"
                 name="email"
                 id="email"
@@ -79,14 +88,9 @@ const Login = () => {
                 <label htmlFor="password" className="text-sm">
                   Password
                 </label>
-                <a
-                  rel="noopener noreferrer"
-                  href="#"
-                  className="text-xs hover:underline text-white"
-                >
-                  Forgot password?
-                </a>
               </div>
+              
+
               <input
                 type="password"
                 name="password"
@@ -95,6 +99,13 @@ const Login = () => {
                 className="w-full px-3 py-2 border rounded-md dark:border-gray-300 dark:bg-gray-50 dark:text-gray-800"
               />
             </div>
+            <NavLink
+                  to="/forgetPassword"
+                  state={{ email: userEmail }}
+                  className="text-sm text-white underline hover:underline"
+                  >
+                  Forget Password?
+                  </NavLink>           
           </div>
           <div className="space-y-2">
             <div>

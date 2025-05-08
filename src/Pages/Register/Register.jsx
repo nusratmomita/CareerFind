@@ -6,7 +6,7 @@ import { Helmet } from "react-helmet-async";
 // import { updateProfile } from "firebase/auth";
 
 const Register = () => {
-  const { handleRegisterForm, handleGoogleSignIn  } = useContext(authContext);
+  const { handleRegisterForm, handleGoogleSignIn , updateUser , setUser } = useContext(authContext);
   const navigate = useNavigate();
   const location = useLocation();
   
@@ -16,7 +16,7 @@ const Register = () => {
     const name = e.target.name.value;
     const email = e.target.email.value;
     const password = e.target.password.value;
-    const photoURL = e.target.image_url.value;
+    const photo = e.target.photo.value;
     // console.log(photoURL)
 
     if (!email || !password || !name) {
@@ -40,7 +40,19 @@ const Register = () => {
     }
 
     // register with email and password
-    handleRegisterForm(email, password ,photoURL)
+    handleRegisterForm(email, password)
+    .then((result) =>{
+      const user = result.user;
+      updateUser({displayName:name , photoURL:photo})
+      .then(()=>{
+        setUser({...user ,displayName:name , photoURL:photo})
+        navigate("/")
+      })
+      .catch(()=>{
+        toast.error("You have put invalid credentials")
+        setUser(user)
+      })
+    })
     
   };
 
@@ -104,7 +116,7 @@ const Register = () => {
                 Upload Photo
               </label>
               <input className="w-full px-3 py-2 border rounded-md dark:border-gray-300 dark:bg-gray-50 dark:text-gray-800 focus:dark:border-violet-600"
-               type="url" id="image_url" name="image_url" placeholder="Enter image URL"/>
+               type="text" id="image_url" name="photo" placeholder="Enter image URL"/>
             </div>
             <div className="space-y-2">
               <div className="flex justify-between">

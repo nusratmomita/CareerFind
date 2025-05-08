@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import logo from "../../assets/logo.png";
 import { Navigate, NavLink, useNavigate } from "react-router";
 import { authContext } from "../../Root/Root";
+import userIcon from "../../assets/user.png"
 import "./Navbar.css"
 
 const Navbar = () => {
@@ -57,7 +58,7 @@ const Navbar = () => {
                  
                     <img onClick={handlePhotoNavigation}
                       className="mb-3 lg:mb-0 lg:mr-4 w-10 h-10 mx-auto rounded-full border-2 border-white"
-                      src={user.photoURL}
+                      src={`${user ? user.photoURL : userIcon}`}
                       alt="User"
                     />
                    

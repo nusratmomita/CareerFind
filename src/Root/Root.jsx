@@ -2,7 +2,7 @@ import React, { createContext, useEffect, useState } from 'react';
 import Navbar from '../Components/Navbar/Navbar';
 import { Outlet } from 'react-router';
 import Footer from '../Components/Footer/Footer';
-import { createUserWithEmailAndPassword , onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth";
+import { createUserWithEmailAndPassword , onAuthStateChanged, sendPasswordResetEmail, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth";
 import { auth } from "../Firebase/Firebase.config"
 import { GoogleAuthProvider } from "firebase/auth";
 import { FaSignOutAlt } from 'react-icons/fa';
@@ -12,22 +12,13 @@ export const authContext = createContext();
 const Root = () => {
 
     const [user , setUser] = useState(null)
+    const [loading , setLoading ] = useState(true);
 
     const provider = new GoogleAuthProvider();
 
     // Register a new user 
-    const handleRegisterForm = (name, email, password, photoURL) => {
+    const handleRegisterForm = (email, password) => {
         return createUserWithEmailAndPassword(auth, email, password)
-          .then((userCredential) => {
-            const user = userCredential.user;
-            return updateProfile(user, {
-              displayName: name,
-              photoURL: photoURL,
-            }).then(() => {
-            //   return userCredential;
-              setUser(user)
-            });
-          });
     }
 
     // Registration with Google account
@@ -45,6 +36,18 @@ const Root = () => {
         return signInWithPopup(auth,provider)
     }
 
+    // update user info
+    const updateUser = (updatedData) => {
+        return updateProfile(auth.currentUser, updatedData);
+    };
+
+    // handle forget password
+    const handleForgetPassword = (email,) => {
+        sendPasswordResetEmail(auth,email)
+        .then(()=>{
+
+        })
+    }
     // handle log out
     const handleLogOut = () => {
         signOut(auth).then(() => {
@@ -59,6 +62,7 @@ const Root = () => {
     useEffect(()=> {
         const unsubscribe = onAuthStateChanged(auth , (currentUser)=>{
             setUser(currentUser);
+            setLoading(false)
         })
 
         return () => {
@@ -72,7 +76,12 @@ const Root = () => {
         handleGoogleSignIn,
         handleLoginForm ,
         handleGoogleLogin,
+        updateUser,
         handleLogOut,
+        loading,
+        setLoading,
+        handleForgetPassword,
+        setUser,
         user
     }
 
