@@ -21,7 +21,7 @@ const ForgetPassword = () => {
         return toast.error("Enter your email first")
 
     // redirecting to gmail
-    window.location.href="/https://mail.google.com"
+    window.location.href="https://mail.google.com"
   };
 
   return (
