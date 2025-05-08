@@ -5,11 +5,11 @@ import ContactUs from "../Pages/ContactUs/ContactUs";
 import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
-import Recruiters from "../Pages/RecentJobs/RecentJobs";
 import RecentJobs from "../Pages/RecentJobs/RecentJobs";
 import CompanyDetail from "../Pages/CompanyDetail/CompanyDetail";
 import PrivateRoute from "../Pages/PrivateRoute/PrivateRoute";
 import MyProfile from "../Components/MyProfile/MyProfile";
+import Recruiters from "../Pages/Recruiters/Recruiters";
 
 export const router = createBrowserRouter([
     {

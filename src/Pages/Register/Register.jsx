@@ -9,7 +9,7 @@ const Register = () => {
   const { handleRegisterForm, handleGoogleSignIn  } = useContext(authContext);
   const navigate = useNavigate();
   const location = useLocation();
-  const currentPath  = location.pathname
+  
 
   const handleRegisterSubmit = (e) => {
     e.preventDefault();
@@ -73,7 +73,7 @@ const Register = () => {
   return (
     <>
     <Helmet>
-      <title>{currentPath}</title>
+      <title>Register</title>
     </Helmet>
       <ToastContainer></ToastContainer>
       <div className="w-full max-w-md p-4 rounded-md shadow sm:p-8 bg-gray-800 text-white mx-auto my-10">

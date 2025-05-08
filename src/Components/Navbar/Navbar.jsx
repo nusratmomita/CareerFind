@@ -6,9 +6,13 @@ import "./Navbar.css"
 
 const Navbar = () => {
     const navigate = useNavigate()
-    const {user} = useContext(authContext);
+    const {user , handleLogOut} = useContext(authContext);
     // console.log(user)
 
+
+    const handlePhotoNavigation = () =>  {
+      navigate("/myProfile");
+    }
 
     const links = <>
         <li className="text-gray-100 text-xl font-bold"><NavLink to="/">Home</NavLink></li>
@@ -40,7 +44,7 @@ const Navbar = () => {
              {
               !user ? (
                 <>
-                  <li className="ml-2 text-blue-900 text-xl font-semibold rounded-xl bg-blue-300">
+                  <li className="mb-3 lg:mb-0 ml-2 text-blue-900 text-xl font-semibold rounded-xl bg-blue-300">
                     <NavLink to="/login">Login</NavLink>
                   </li>
                   <li className="ml-3 text-purple-900 text-xl font-semibold rounded-xl bg-purple-300">
@@ -50,12 +54,14 @@ const Navbar = () => {
               ) : (
                 user && (
                   <>
-                    <img
-                      className="w-10 h-10 rounded-full border-2 border-white mr-5"
+                 
+                    <img onClick={handlePhotoNavigation}
+                      className="mb-3 lg:mb-0 lg:mr-4 w-10 h-10 mx-auto rounded-full border-2 border-white"
                       src={user.photoURL}
                       alt="User"
                     />
-                    <button className="bg-blue-400 cursor-pointer border-2 border-black p-3 rounded-2xl" onClick={()=>navigate("/myProfile")} >Log Out</button>
+                   
+                    <button onClick={handleLogOut} className="bg-blue-400 cursor-pointer border-2 border-black p-3 rounded-2xl"  >Log Out</button>
                   </>
                 )
               )

@@ -43,7 +43,12 @@ const Root = () => {
 
     // handle log out
     const handleLogOut = () => {
-        return signOut(auth);
+        signOut(auth).then(() => {
+            // Sign-out successful.
+          }).catch((error) => {
+            // An error happened.
+            console.log(error)
+          });
     }
 
 

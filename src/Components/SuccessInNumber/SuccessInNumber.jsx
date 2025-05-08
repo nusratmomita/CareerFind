@@ -3,11 +3,14 @@ import boss from '../../assets/boss.png';
 import visit from '../../assets/visit.png';
 import job from '../../assets/job.png';
 import CountUp from 'react-countup';
-
+import honour from "../../assets/honour.png";
 const SuccessInNumber = () => {
     return (
         <>
-            <h1 className='mt-20 text-[#333333] text-4xl font-bold text-center'> [ Honour Section ]</h1>
+            <div className="flex gap-2 justify-center items-center">
+                <h1 className='text-[#333333] text-4xl font-bold text-center'> [ Honour Section ]</h1>
+                <img className="w-12 h-10" src={honour} alt="" />
+            </div>
             <div className='text-3xl font-bold flex flex-col lg:flex-row justify-center items-center gap-5 m-15'>
                 {/* Total jobs given */}
                 <div className='bg-purple-300 w-full p-5 flex flex-col gap-5 justify-center items-center'>

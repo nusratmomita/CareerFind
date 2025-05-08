@@ -1,10 +1,10 @@
-import React, { useContext } from 'react';
-import { authContext } from '../../Root/Root';
+import React from 'react';
+// import { authContext } from '../../Root/Root';
 
 const MyProfile = () => {
-    const {handleLogOut} = useContext(authContext);
+    // const {handleLogOut} = useContext(authContext);
 
-    handleLogOut()
+    // handleLogOut()
     return (
         <div>
             profile page
