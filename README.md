@@ -14,6 +14,13 @@
 </ul>
 
 <br/>
+
+<h1>Project Preview</h1>
+<img src="https://i.ibb.co.com/GfHrRZ6S/career-Find.png" alt="careerFindImage">
+<img src="https://i.ibb.co.com/cS2pdymS/career-Find1.png" alt="careerFindJobs">
+
+<br/>
+
 <h1>Used Packages:📝</h1>
 <ul>
   <li>React helmet for title showcase📍</li>
@@ -22,6 +29,14 @@
   <li>React CountUp and Motion for animation✨</li>
   <li>Firebase for authentication💂‍♂️</li>
 </ul>
+
+<h2>🦾Run Jatri on your own</h2>
+<h4>Step 1: Create a folder named CareerFind.</h4>
+<h4>Step 2: Open it with VS Code and then open a terminal.</h4>
+<h4>Step 3: Paste the command: <code>git clone https://github.com/nusratmomita/CareerFind.git</code>.</h4>
+<h4>Step 4: Download all the dependencies using <code>npm i</code></h4>
+<h4>Step 5: Email me to get the Firebase configurations.</h4>
+
 
 <br/>
 <br/>
