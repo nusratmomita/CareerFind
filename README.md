@@ -30,7 +30,7 @@
   <li>Firebase for authentication💂‍♂️</li>
 </ul>
 
-<h2>🦾Run Jatri on your own</h2>
+<h2>🦾Run CareerFind on your own</h2>
 <h4>Step 1: Create a folder named CareerFind.</h4>
 <h4>Step 2: Open it with VS Code and then open a terminal.</h4>
 <h4>Step 3: Paste the command: <code>git clone https://github.com/nusratmomita/CareerFind.git</code>.</h4>
